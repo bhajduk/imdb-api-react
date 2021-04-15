@@ -1,0 +1,110 @@
+#inputBox {
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+    text-decoration: none;
+    letter-spacing: 0.3rem;
+}
+
+#inputBox::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+*:focus {
+    outline: none;
+}
+
+.formContainer {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+    /* background: url("background.jpg"); */
+    background-color: rgb(11, 35, 61);
+    background-size: cover;
+    background-position: center;
+    perspective: 1000px;
+}
+
+.formContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#c3f4f7, #fa6ddb);
+    clip-path: circle(12% at 30% 13%);
+}
+
+.formContainer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#c3f4f7, #fa6ddb);
+    clip-path: circle(16% at 67% 93%);
+    z-index: -1;
+}
+
+.form {
+    display: flex;
+    padding: 50px;
+    height: auto;
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(230, 230, 230, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    transform-style: preserve-3d;
+}
+
+#searchBtn {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    padding: 15px 60px;
+    display: block;
+    margin: 25px auto;
+    text-decoration: none;
+    letter-spacing: 0.7rem;
+    text-transform: uppercase;
+    border: 1px solid white;
+}
+
+#searchBtn:hover {
+    box-shadow: 0 8px 32px 0 rgba(121, 121, 121, 0.37);
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+#parag {
+    text-decoration: none;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#rating {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 2.3rem;
+}
